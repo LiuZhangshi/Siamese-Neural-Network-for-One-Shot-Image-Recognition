@@ -3,6 +3,6 @@ The code here includes loading dataset, data preprocessing, model building layer
 
 References:
 
-Siamese Neural Networks for One-shot Image Recognition, 2015.
+1. Siamese Neural Networks for One-shot Image Recognition, 2015.
 
-https://machinelearningmastery.com/one-shot-learning-with-siamese-networks-contrastive-and-triplet-loss-for-face-recognition/
+2. https://machinelearningmastery.com/one-shot-learning-with-siamese-networks-contrastive-and-triplet-loss-for-face-recognition/
