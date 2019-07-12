@@ -18,21 +18,6 @@ import matplotlib.pyplot as plt
 from numpy import asarray
 import random
 
-
-# One-shot learning are classification tasks where many predictions are required given one (or a few) examples of each class, and face recognition is an example of one-shot learning.
-# 
-# Siamese networks are an approach to addressing one-shot learning in which a learned feature vector for the known and candidate example are compared. A Siamese network is an architecture with two parallel neural networks, each taking a different input, and whose outputs are combined to provide some prediction.
-# 
-# The deep CNNs are first trained to discriminate between examples of each class. The models are then re-purposed for verification to predict whether new examples match a template for each class.
-# 
-# Specifically, each network produces a feature vector for an input image, which are then compared using the L1 distance and a sigmoid activation.
-# 
-# triplet loss involves an anchor example and one positive or matching example (same class) and one negative or non-matching example (differing class).
-# 
-# Triplet loss (FaceNet) functions can be used to learn high-quality face embedding vectors that provide the basis for modern face recognition systems. The loss function penalizes the model such that the distance between the matching examples is reduced and the distance between the non-matching examples is increased.
-# 
-# Facenet 'In this paper we present a system, called FaceNet, that directly learns a mapping from face images to a compact Euclidean space where distances directly correspond to a measure of face similarity.' Facenet is not using siamese nn, but using the idea of embedding and comparative loss.
-
 # In[2]:
 
 
@@ -105,7 +90,7 @@ model.compile(optimizer = 'Adam', loss = keras.losses.binary_crossentropy, metri
 # load image from folders and preprocess images 
 def load_images(directory):
     images = list()
-    # enumerate files
+
     for filename in listdir(directory):
         path = directory + filename
         # load img as PIL type, specify grayscale and target_size
