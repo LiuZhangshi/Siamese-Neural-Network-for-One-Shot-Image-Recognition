@@ -1,5 +1,5 @@
 # Siamese-Neural-Network
-A Siamese network, aiming to solve the problem of one-shot learning, is an architecture with two parallel "base models", each taking a different input, and the outputs are combined to provide some prediction.
+A Siamese network, aiming to solve the problem of one-shot learning, has an architecture with two parallel "base models", each taking a different input, and the outputs are combined to provide some prediction.
 
 "Once a network has been tuned, we can then capitalize on powerful discriminative features to generalize the predictive power of the network not just to new data, but to entirely new classes from unknown distributions."
 
